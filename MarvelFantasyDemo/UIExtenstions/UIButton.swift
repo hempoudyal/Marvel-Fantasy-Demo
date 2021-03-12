@@ -9,7 +9,7 @@ import UIKit
 
 extension UIButton{
     
-    func configure(titleColor: UIColor = .white,
+    func configureBtn(titleColor: UIColor = .white,
                    cornerRadius: CGFloat){
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true

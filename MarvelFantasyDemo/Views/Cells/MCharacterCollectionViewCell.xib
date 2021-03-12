@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xjc-jc-OtJ" customClass="MCharacterCollectionViewCell" customModule="MarvelFantasyDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p4r-So-hdE">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVz-fz-izj">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="gJL-D0-csJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0em-If-qxc">
+                        <rect key="frame" x="0.0" y="139" width="140" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0em-If-qxc" firstAttribute="leading" secondItem="p4r-So-hdE" secondAttribute="leading" id="82d-2C-obo"/>
+                    <constraint firstItem="QVz-fz-izj" firstAttribute="leading" secondItem="p4r-So-hdE" secondAttribute="leading" id="ChR-DH-VBb"/>
+                    <constraint firstAttribute="bottom" secondItem="0em-If-qxc" secondAttribute="bottom" id="Ews-c5-jKu"/>
+                    <constraint firstAttribute="trailing" secondItem="0em-If-qxc" secondAttribute="trailing" id="Hle-Hl-oHE"/>
+                    <constraint firstItem="0em-If-qxc" firstAttribute="top" secondItem="QVz-fz-izj" secondAttribute="bottom" constant="-1" id="Ljh-vZ-jNq"/>
+                    <constraint firstAttribute="trailing" secondItem="QVz-fz-izj" secondAttribute="trailing" id="M1E-P9-q9d"/>
+                    <constraint firstItem="QVz-fz-izj" firstAttribute="top" secondItem="p4r-So-hdE" secondAttribute="top" id="YqV-rL-a80"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="140" height="180"/>
+            <connections>
+                <outlet property="mCharacterImageView" destination="QVz-fz-izj" id="PlS-JA-eqk"/>
+                <outlet property="mCharacterLabel" destination="0em-If-qxc" id="BOY-Aw-l3I"/>
+            </connections>
+            <point key="canvasLocation" x="-236.23188405797103" y="468.75"/>
+        </collectionViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

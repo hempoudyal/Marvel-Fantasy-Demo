@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-//06022F
+
 enum networkStatus: Int{
     case success = 200
     case created = 201

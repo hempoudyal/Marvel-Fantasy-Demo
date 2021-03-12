@@ -2,10 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ah1-NM-KVq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,7 +66,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FL2-wu-0ti">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="888"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="988"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarvelBg" translatesAutoresizingMaskIntoConstraints="NO" id="TaJ-43-5Q6">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -130,7 +130,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.023529411764705882" green="0.0078431372549019607" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="ka9-fd-VB3" firstAttribute="centerY" secondItem="95I-Rz-hb4" secondAttribute="centerY" id="2n5-AW-AbO"/>
                                                     <constraint firstAttribute="bottom" secondItem="bnU-sj-4ev" secondAttribute="bottom" constant="30" id="4RZ-p8-VIq"/>
@@ -138,6 +138,7 @@
                                                     <constraint firstItem="xO2-Xg-2Vz" firstAttribute="centerY" secondItem="991-Be-z01" secondAttribute="centerY" id="5Ow-ij-hVF"/>
                                                     <constraint firstItem="95I-Rz-hb4" firstAttribute="trailing" secondItem="xO2-Xg-2Vz" secondAttribute="trailing" id="7gC-mU-0HL"/>
                                                     <constraint firstItem="991-Be-z01" firstAttribute="leading" secondItem="m3Q-EY-xtY" secondAttribute="leading" constant="16" id="8Yp-vx-iMg"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bnU-sj-4ev" secondAttribute="trailing" constant="20" symbolic="YES" id="8wi-x3-56W"/>
                                                     <constraint firstItem="bnU-sj-4ev" firstAttribute="leading" secondItem="991-Be-z01" secondAttribute="leading" id="DCW-6j-UHc"/>
                                                     <constraint firstAttribute="height" constant="288" id="GLy-Lj-G7o"/>
                                                     <constraint firstItem="991-Be-z01" firstAttribute="top" secondItem="m3Q-EY-xtY" secondAttribute="top" constant="35" id="MYr-FZ-C6g"/>
@@ -148,27 +149,22 @@
                                                 </constraints>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="S2O-fY-DEn">
-                                                <rect key="frame" x="0.0" y="488" width="414" height="400"/>
+                                                <rect key="frame" x="0.0" y="488" width="414" height="500"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="400" id="0Np-Rl-H9b"/>
+                                                    <constraint firstAttribute="height" constant="500" id="0Np-Rl-H9b"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xeq-HK-2Fh">
-                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="itemSize" width="150" height="180"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
-                                                <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OzF-cx-s9D">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="780-6c-ld1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </collectionViewCellContentView>
-                                                    </collectionViewCell>
-                                                </cells>
+                                                <cells/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3Nx-YS-nDN"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QWf-4m-OYO"/>
+                                                </connections>
                                             </collectionView>
                                         </subviews>
                                     </stackView>
@@ -194,7 +190,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2IE-mc-6oD"/>
                     <connections>
+                        <outlet property="collectionView" destination="S2O-fY-DEn" id="YVx-32-zm0"/>
                         <outlet property="searchButton" destination="xO2-Xg-2Vz" id="4nF-yi-xOE"/>
+                        <outlet property="searchHolderView" destination="m3Q-EY-xtY" id="RCK-V8-IM6"/>
                         <outlet property="searchTextField" destination="991-Be-z01" id="f2k-Iu-dKp"/>
                         <outlet property="separatorView" destination="ka9-fd-VB3" id="bJ6-Gp-Puu"/>
                     </connections>

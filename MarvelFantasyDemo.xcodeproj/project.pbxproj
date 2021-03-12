@@ -22,6 +22,14 @@
 		991A6C1125FA49B100D31A26 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C1025FA49B100D31A26 /* UITextField.swift */; };
 		991A6C1625FA4EC300D31A26 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C1525FA4EC200D31A26 /* UIButton.swift */; };
 		991A6C1B25FA68C800D31A26 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C1A25FA68C800D31A26 /* UIView.swift */; };
+		991A6C3125FA8F9C00D31A26 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C3025FA8F9C00D31A26 /* UIColor.swift */; };
+		991A6C3725FA911900D31A26 /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C3625FA911900D31A26 /* UIConfiguration.swift */; };
+		991A6C4725FA949100D31A26 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C4625FA949100D31A26 /* UIImage.swift */; };
+		99B00DCF25FB814A000B6546 /* SuperHeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DCE25FB814A000B6546 /* SuperHeroData.swift */; };
+		99B00DD725FB818F000B6546 /* MarvelCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DD625FB818F000B6546 /* MarvelCharacters.swift */; };
+		99B00DE925FBB5D2000B6546 /* MCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DE825FBB5D2000B6546 /* MCharacterCollectionViewCell.swift */; };
+		99B00DFD25FC0B69000B6546 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DFC25FC0B69000B6546 /* HomeViewController+CollectionView.swift */; };
+		99B00E1025FC1285000B6546 /* MCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B00E0F25FC1284000B6546 /* MCharacterCollectionViewCell.xib */; };
 		EECA413DCD119EB552DEB653 /* Pods_MarvelFantasyDemo_MarvelFantasyDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B42ADE6759D3928A2480E54 /* Pods_MarvelFantasyDemo_MarvelFantasyDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +74,14 @@
 		991A6C1025FA49B100D31A26 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		991A6C1525FA4EC200D31A26 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		991A6C1A25FA68C800D31A26 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		991A6C3025FA8F9C00D31A26 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		991A6C3625FA911900D31A26 /* UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
+		991A6C4625FA949100D31A26 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		99B00DCE25FB814A000B6546 /* SuperHeroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroData.swift; sourceTree = "<group>"; };
+		99B00DD625FB818F000B6546 /* MarvelCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacters.swift; sourceTree = "<group>"; };
+		99B00DE825FBB5D2000B6546 /* MCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		99B00DFC25FC0B69000B6546 /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		99B00E0F25FC1284000B6546 /* MCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
 		B973CF44C94F6353FF173367 /* Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests/Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF5DD472B6FFF84B3B8D1BC8 /* Pods-MarvelFantasyDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemoTests/Pods-MarvelFantasyDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3920D447094E50A72997462 /* Pods-MarvelFantasyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemo.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemo/Pods-MarvelFantasyDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,12 +165,16 @@
 		991A6B9B25F958E700D31A26 /* MarvelFantasyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				99B00DCD25FB8132000B6546 /* DataService */,
 				991A6BDC25F9784B00D31A26 /* WebService */,
 				991A6BDB25F9757000D31A26 /* UIExtenstions */,
+				991A6C3525FA90C900D31A26 /* Helpers */,
 				991A6BDA25F9754000D31A26 /* Models */,
 				991A6BFF25FA329400D31A26 /* ViewControllers */,
+				99B00DE325FBB3CF000B6546 /* Views */,
 				991A6B9C25F958E700D31A26 /* AppDelegate.swift */,
 				991A6B9E25F958E700D31A26 /* SceneDelegate.swift */,
+				991A6C3625FA911900D31A26 /* UIConfiguration.swift */,
 				991A6BA225F958E800D31A26 /* Main.storyboard */,
 				991A6BA525F958EB00D31A26 /* Assets.xcassets */,
 				991A6BA725F958EB00D31A26 /* LaunchScreen.storyboard */,
@@ -184,6 +204,7 @@
 		991A6BDA25F9754000D31A26 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				99B00DD625FB818F000B6546 /* MarvelCharacters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +215,8 @@
 				991A6C1025FA49B100D31A26 /* UITextField.swift */,
 				991A6C1525FA4EC200D31A26 /* UIButton.swift */,
 				991A6C1A25FA68C800D31A26 /* UIView.swift */,
+				991A6C3025FA8F9C00D31A26 /* UIColor.swift */,
+				991A6C4625FA949100D31A26 /* UIImage.swift */,
 			);
 			path = UIExtenstions;
 			sourceTree = "<group>";
@@ -211,8 +234,41 @@
 			isa = PBXGroup;
 			children = (
 				991A6C0025FA32AE00D31A26 /* HomeViewController.swift */,
+				99B00DFC25FC0B69000B6546 /* HomeViewController+CollectionView.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		991A6C3525FA90C900D31A26 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		99B00DCD25FB8132000B6546 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				99B00DCE25FB814A000B6546 /* SuperHeroData.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		99B00DE325FBB3CF000B6546 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99B00DE425FBB3DB000B6546 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99B00DE425FBB3DB000B6546 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				99B00DE825FBB5D2000B6546 /* MCharacterCollectionViewCell.swift */,
+				99B00E0F25FC1284000B6546 /* MCharacterCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B00E1025FC1285000B6546 /* MCharacterCollectionViewCell.xib in Resources */,
 				991A6BA925F958EB00D31A26 /* LaunchScreen.storyboard in Resources */,
 				991A6BA625F958EB00D31A26 /* Assets.xcassets in Resources */,
 				991A6BA425F958E800D31A26 /* Main.storyboard in Resources */,
@@ -453,14 +510,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B00DCF25FB814A000B6546 /* SuperHeroData.swift in Sources */,
 				991A6C1B25FA68C800D31A26 /* UIView.swift in Sources */,
 				991A6C0125FA32AE00D31A26 /* HomeViewController.swift in Sources */,
+				991A6C3725FA911900D31A26 /* UIConfiguration.swift in Sources */,
 				991A6B9D25F958E700D31A26 /* AppDelegate.swift in Sources */,
 				991A6BE625F9797E00D31A26 /* API_Router.swift in Sources */,
 				991A6BDE25F9789000D31A26 /* WebService.swift in Sources */,
+				99B00DD725FB818F000B6546 /* MarvelCharacters.swift in Sources */,
 				991A6C1625FA4EC300D31A26 /* UIButton.swift in Sources */,
 				991A6B9F25F958E700D31A26 /* SceneDelegate.swift in Sources */,
 				991A6C1125FA49B100D31A26 /* UITextField.swift in Sources */,
+				991A6C4725FA949100D31A26 /* UIImage.swift in Sources */,
+				99B00DFD25FC0B69000B6546 /* HomeViewController+CollectionView.swift in Sources */,
+				991A6C3125FA8F9C00D31A26 /* UIColor.swift in Sources */,
+				99B00DE925FBB5D2000B6546 /* MCharacterCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +704,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QZAD6AG54;
 				INFOPLIST_FILE = MarvelFantasyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,6 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QZAD6AG54;
 				INFOPLIST_FILE = MarvelFantasyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
