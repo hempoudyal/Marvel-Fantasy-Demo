@@ -6,26 +6,25 @@
 //
 
 import Foundation
+import Alamofire
 
 struct API_Request{
     var url: String
-    var isAuthRequired: Bool
-    //var method: HTTPMethod
-}
-
-struct APIConstants{
-    
+    var method: HTTPMethod
 }
 
 enum API_Router{
-    case events
+    case getCharacters
+    case events(id: String)
 }
 
 extension API_Router{
     func path() -> API_Request{
         switch self {
-        case .events:
-            return API_Request(url: "a", isAuthRequired: true)
+        case .getCharacters:
+            return API_Request(url: WebConstants.kBaseURL, method: .get)
+        case .events (let id):
+            return API_Request(url: WebConstants.kBaseURL + "/" + id + "/events", method: .get)
         }
     }
         

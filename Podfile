@@ -8,6 +8,8 @@ target 'MarvelFantasyDemo' do
   # Pods for MarvelFantasyDemo
   pod 'Alamofire', '~> 5.2'
   pod 'IQKeyboardManagerSwift'
+  pod 'SVProgressHUD'
+  pod 'CryptoSwift'
 
   target 'MarvelFantasyDemoTests' do
     inherit! :search_paths

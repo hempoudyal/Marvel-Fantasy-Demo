@@ -25,11 +25,16 @@
 		991A6C3125FA8F9C00D31A26 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C3025FA8F9C00D31A26 /* UIColor.swift */; };
 		991A6C3725FA911900D31A26 /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C3625FA911900D31A26 /* UIConfiguration.swift */; };
 		991A6C4725FA949100D31A26 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A6C4625FA949100D31A26 /* UIImage.swift */; };
+		996738C325FCE53A00C56CD3 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996738C225FCE53A00C56CD3 /* ResponseModel.swift */; };
+		996738C825FCE6FA00C56CD3 /* ListMarvelCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996738C725FCE6FA00C56CD3 /* ListMarvelCharactersViewController.swift */; };
+		996738CD25FCE9FB00C56CD3 /* GenricCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996738CC25FCE9FB00C56CD3 /* GenricCollectionViewController.swift */; };
 		99B00DCF25FB814A000B6546 /* SuperHeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DCE25FB814A000B6546 /* SuperHeroData.swift */; };
 		99B00DD725FB818F000B6546 /* MarvelCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DD625FB818F000B6546 /* MarvelCharacters.swift */; };
 		99B00DE925FBB5D2000B6546 /* MCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DE825FBB5D2000B6546 /* MCharacterCollectionViewCell.swift */; };
 		99B00DFD25FC0B69000B6546 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00DFC25FC0B69000B6546 /* HomeViewController+CollectionView.swift */; };
 		99B00E1025FC1285000B6546 /* MCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B00E0F25FC1284000B6546 /* MCharacterCollectionViewCell.xib */; };
+		99B00E1D25FC1F61000B6546 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00E1C25FC1F60000B6546 /* ViewConstants.swift */; };
+		99B00E2E25FC2235000B6546 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00E2D25FC2235000B6546 /* Globals.swift */; };
 		EECA413DCD119EB552DEB653 /* Pods_MarvelFantasyDemo_MarvelFantasyDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B42ADE6759D3928A2480E54 /* Pods_MarvelFantasyDemo_MarvelFantasyDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,11 +82,16 @@
 		991A6C3025FA8F9C00D31A26 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		991A6C3625FA911900D31A26 /* UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
 		991A6C4625FA949100D31A26 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		996738C225FCE53A00C56CD3 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		996738C725FCE6FA00C56CD3 /* ListMarvelCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMarvelCharactersViewController.swift; sourceTree = "<group>"; };
+		996738CC25FCE9FB00C56CD3 /* GenricCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenricCollectionViewController.swift; sourceTree = "<group>"; };
 		99B00DCE25FB814A000B6546 /* SuperHeroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroData.swift; sourceTree = "<group>"; };
 		99B00DD625FB818F000B6546 /* MarvelCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacters.swift; sourceTree = "<group>"; };
 		99B00DE825FBB5D2000B6546 /* MCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		99B00DFC25FC0B69000B6546 /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		99B00E0F25FC1284000B6546 /* MCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		99B00E1C25FC1F60000B6546 /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
+		99B00E2D25FC2235000B6546 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		B973CF44C94F6353FF173367 /* Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests/Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF5DD472B6FFF84B3B8D1BC8 /* Pods-MarvelFantasyDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemoTests/Pods-MarvelFantasyDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3920D447094E50A72997462 /* Pods-MarvelFantasyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemo.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemo/Pods-MarvelFantasyDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				99B00DD625FB818F000B6546 /* MarvelCharacters.swift */,
+				996738C225FCE53A00C56CD3 /* ResponseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +246,8 @@
 			children = (
 				991A6C0025FA32AE00D31A26 /* HomeViewController.swift */,
 				99B00DFC25FC0B69000B6546 /* HomeViewController+CollectionView.swift */,
+				996738CC25FCE9FB00C56CD3 /* GenricCollectionViewController.swift */,
+				996738C725FCE6FA00C56CD3 /* ListMarvelCharactersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,6 +255,7 @@
 		991A6C3525FA90C900D31A26 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				99B00E2D25FC2235000B6546 /* Globals.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -257,6 +271,7 @@
 		99B00DE325FBB3CF000B6546 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				99B00E1C25FC1F60000B6546 /* ViewConstants.swift */,
 				99B00DE425FBB3DB000B6546 /* Cells */,
 			);
 			path = Views;
@@ -514,16 +529,21 @@
 				991A6C1B25FA68C800D31A26 /* UIView.swift in Sources */,
 				991A6C0125FA32AE00D31A26 /* HomeViewController.swift in Sources */,
 				991A6C3725FA911900D31A26 /* UIConfiguration.swift in Sources */,
+				99B00E2E25FC2235000B6546 /* Globals.swift in Sources */,
 				991A6B9D25F958E700D31A26 /* AppDelegate.swift in Sources */,
 				991A6BE625F9797E00D31A26 /* API_Router.swift in Sources */,
+				99B00E1D25FC1F61000B6546 /* ViewConstants.swift in Sources */,
 				991A6BDE25F9789000D31A26 /* WebService.swift in Sources */,
 				99B00DD725FB818F000B6546 /* MarvelCharacters.swift in Sources */,
+				996738C325FCE53A00C56CD3 /* ResponseModel.swift in Sources */,
 				991A6C1625FA4EC300D31A26 /* UIButton.swift in Sources */,
 				991A6B9F25F958E700D31A26 /* SceneDelegate.swift in Sources */,
+				996738C825FCE6FA00C56CD3 /* ListMarvelCharactersViewController.swift in Sources */,
 				991A6C1125FA49B100D31A26 /* UITextField.swift in Sources */,
 				991A6C4725FA949100D31A26 /* UIImage.swift in Sources */,
 				99B00DFD25FC0B69000B6546 /* HomeViewController+CollectionView.swift in Sources */,
 				991A6C3125FA8F9C00D31A26 /* UIColor.swift in Sources */,
+				996738CD25FCE9FB00C56CD3 /* GenricCollectionViewController.swift in Sources */,
 				99B00DE925FBB5D2000B6546 /* MCharacterCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

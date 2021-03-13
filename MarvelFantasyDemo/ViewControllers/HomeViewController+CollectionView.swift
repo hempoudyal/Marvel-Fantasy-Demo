@@ -8,22 +8,9 @@
 import Foundation
 import UIKit
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //Custom Marvel Characters
-        return SuperHeroData.heroCharacters.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // Configure the cell
-        let model = SuperHeroData.heroCharacters[indexPath.row]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MCharacterCollectionViewCell
-        cell.configure(cornerRadius: 10.0)
-        cell.mCharacterLabel.text = model.name
-        cell.mCharacterImageView.image = UIImage(named: model.thumbnail.path!)
-        return cell
-    }
-    
+//Delegate and Flow Layout for Collection View
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // Give cell width and height
         let screenRect = UIScreen.main.bounds
@@ -43,3 +30,4 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return 40
     }
 }
+

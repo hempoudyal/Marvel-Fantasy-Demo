@@ -8,16 +8,20 @@
 import Foundation
 import UIKit
 
+
 struct MarvelCharacter: Codable {
     var id: Int
     var name: String
-    var descriptionCharacter: String?
+    var description: String? = ""
     var thumbnail: Thumbnail
-   
 }
 
 struct Thumbnail: Codable {
     var extensionImg: String?
     var path: String?
-    var imgURL: String?
+    
+    enum CodingKeys: String, CodingKey{
+        case extensionImg = "extension"
+        case path = "path"
+    }
 }
