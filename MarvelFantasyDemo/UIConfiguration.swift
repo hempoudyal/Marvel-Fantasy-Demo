@@ -24,7 +24,8 @@ class MFantasyUIConfiguration{
         UITabBar.appearance().backgroundImage = UIImage.colorForNavBar( UIColor.init(hexString: self.mainThemeBackgroundColor))
 
         UINavigationBar.appearance().barTintColor =  UIColor.init(hexString: self.mainThemeBackgroundColor)
-        UINavigationBar.appearance().tintColor =  UIColor.init(hexString: self.mainThemeForegroundColor)
+        UINavigationBar.appearance().tintColor =  UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
 }
 

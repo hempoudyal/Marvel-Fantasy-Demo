@@ -5,9 +5,6 @@
 //  Created by Hem Poudyal on 3/13/21.
 //
 
-import Foundation
-
-
 struct Response: Codable{
     let status: String
     let data : ResponseData

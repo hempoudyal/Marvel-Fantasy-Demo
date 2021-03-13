@@ -5,16 +5,12 @@
 //  Created by Hem Poudyal on 3/12/21.
 //
 
-import Foundation
-import UIKit
-
-
 struct MarvelCharacter: Codable {
     var id: Int
     var name: String
     var description: String? = ""
     var thumbnail: Thumbnail
-    var stories: Stories?
+    //var stories: Stories?
 }
 
 struct Thumbnail: Codable {
