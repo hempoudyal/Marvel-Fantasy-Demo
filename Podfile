@@ -6,10 +6,10 @@ target 'MarvelFantasyDemo' do
   use_frameworks!
 
   # Pods for MarvelFantasyDemo
-  pod 'Alamofire', '~> 5.2'
   pod 'IQKeyboardManagerSwift'
   pod 'SVProgressHUD'
   pod 'CryptoSwift'
+  pod 'Kingfisher'
 
   target 'MarvelFantasyDemoTests' do
     inherit! :search_paths

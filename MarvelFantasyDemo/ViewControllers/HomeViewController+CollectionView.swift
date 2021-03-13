@@ -29,5 +29,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
         // splace between two cell vertically
         return 40
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigateToListView()
+    }
 }
 

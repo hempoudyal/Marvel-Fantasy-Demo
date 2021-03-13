@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import Alamofire
 
 struct API_Request{
     var url: String
-    var method: HTTPMethod
+    //only url is taken for Marvel Api, since it has just .get method
+    //other authorization values can also be set
 }
 
 enum API_Router{
@@ -22,9 +22,9 @@ extension API_Router{
     func path() -> API_Request{
         switch self {
         case .getCharacters:
-            return API_Request(url: WebConstants.kBaseURL, method: .get)
+            return API_Request(url: WebConstants.kBaseURL)
         case .events (let id):
-            return API_Request(url: WebConstants.kBaseURL + "/" + id + "/events", method: .get)
+            return API_Request(url: WebConstants.kBaseURL + "/" + id + "/events")
         }
     }
         

@@ -15,7 +15,7 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var searchHolderView: UIView!
     @IBOutlet weak var separatorView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
-    var mCharacters = [MarvelCharacter]()
+    var mCharacters: [MarvelCharacter]?
     var dataSource: GenricCollectionViewDataSource<MarvelCharacter>?
     
     override func viewDidLoad() {
@@ -70,18 +70,26 @@ class HomeViewController: UIViewController{
         WebService.webRequest(.getCharacters,
                               parameters: param)
         { (response) in
-            
             do{
                 let m = try JSONDecoder().decode(Response.self, from: response)
                 print(m.data.results)
+                self.mCharacters = m.data.results
                 
+                DispatchQueue.main.async {
+                    self.navigateToListView()
+                }
             } catch{
                 //failed to parse
             }
-            
         } failureBlock: { (message) in
             print(message)
         }
+    }
+    
+    func navigateToListView(){
+        let listMarvel = ListMarvelCharactersViewController()
+        listMarvel.mCharacters =  self.mCharacters
+        self.navigationController?.pushViewController(listMarvel, animated: true)
     }
     
 }
