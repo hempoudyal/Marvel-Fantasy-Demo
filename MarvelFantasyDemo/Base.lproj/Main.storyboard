@@ -197,6 +197,7 @@
                     <navigationItem key="navigationItem" id="2IE-mc-6oD"/>
                     <connections>
                         <outlet property="collectionView" destination="S2O-fY-DEn" id="YVx-32-zm0"/>
+                        <outlet property="collectionViewHeight" destination="0Np-Rl-H9b" id="y3E-z7-F74"/>
                         <outlet property="searchButton" destination="xO2-Xg-2Vz" id="4nF-yi-xOE"/>
                         <outlet property="searchHolderView" destination="m3Q-EY-xtY" id="RCK-V8-IM6"/>
                         <outlet property="searchTextField" destination="991-Be-z01" id="f2k-Iu-dKp"/>

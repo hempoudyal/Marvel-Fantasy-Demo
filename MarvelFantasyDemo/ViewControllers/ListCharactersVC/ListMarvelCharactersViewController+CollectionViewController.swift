@@ -11,7 +11,7 @@ extension ListMarvelCharactersViewController: UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // Give cell width and height
         let screenRect = UIScreen.main.bounds
-        let cellwidth = (screenRect.size.width/2) - 40
+        let cellwidth = ((screenRect.size.width/2) - 40) + 10
         let cellHeight = cellwidth*1.3
         
         return CGSize(width: cellwidth, height: cellHeight)

@@ -33,7 +33,6 @@ class WebService : NSObject{
         
         //Merge parameters
         if let reqParam = parameters {
-            print(reqParam)
             param.update(other: reqParam)
         }
         

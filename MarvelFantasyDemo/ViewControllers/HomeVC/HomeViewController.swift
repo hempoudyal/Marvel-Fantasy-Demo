@@ -14,6 +14,8 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var searchHolderView: UIView!
     @IBOutlet weak var separatorView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
+    
     var mCharacters: [MarvelCharacter]?
     var dataSource: GenricCollectionViewDataSource<MarvelCharacter>?
     var activityIndicator = UIActivityIndicatorView(style: .medium)
@@ -44,6 +46,7 @@ class HomeViewController: UIViewController{
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: activityIndicator)
         activityIndicator.hidesWhenStopped = true
         
+        collectionViewHeight.constant = (self.view.frame.width/2 - 30) * 2.6 + 100 //height based on cells
         collectionView.backgroundColor = UIColor(hexString: config.mainThemeBackgroundColor)
         setCollectionView()
         
@@ -90,7 +93,6 @@ class HomeViewController: UIViewController{
             self.searchButtonClicked = false
             do{
                 let m = try JSONDecoder().decode(Response.self, from: response)
-                print(m.data.results)
                 self.mCharacters = m.data.results
                 
                 DispatchQueue.main.async {

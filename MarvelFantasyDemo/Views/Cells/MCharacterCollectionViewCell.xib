@@ -18,12 +18,12 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVz-fz-izj">
                         <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="140" id="gJL-D0-csJ"/>
-                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0em-If-qxc">
-                        <rect key="frame" x="0.0" y="139" width="140" height="41"/>
+                        <rect key="frame" x="0.0" y="140" width="140" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="dOB-m8-QSx"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                     <constraint firstItem="QVz-fz-izj" firstAttribute="leading" secondItem="p4r-So-hdE" secondAttribute="leading" id="ChR-DH-VBb"/>
                     <constraint firstAttribute="bottom" secondItem="0em-If-qxc" secondAttribute="bottom" id="Ews-c5-jKu"/>
                     <constraint firstAttribute="trailing" secondItem="0em-If-qxc" secondAttribute="trailing" id="Hle-Hl-oHE"/>
-                    <constraint firstItem="0em-If-qxc" firstAttribute="top" secondItem="QVz-fz-izj" secondAttribute="bottom" constant="-1" id="Ljh-vZ-jNq"/>
+                    <constraint firstItem="0em-If-qxc" firstAttribute="top" secondItem="QVz-fz-izj" secondAttribute="bottom" id="Ljh-vZ-jNq"/>
                     <constraint firstAttribute="trailing" secondItem="QVz-fz-izj" secondAttribute="trailing" id="M1E-P9-q9d"/>
                     <constraint firstItem="QVz-fz-izj" firstAttribute="top" secondItem="p4r-So-hdE" secondAttribute="top" id="YqV-rL-a80"/>
                 </constraints>
