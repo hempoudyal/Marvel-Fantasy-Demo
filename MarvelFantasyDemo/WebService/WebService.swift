@@ -26,6 +26,7 @@ class WebService : NSObject{
         let hashString = ts + WebConstants.privateKey + WebConstants.publicKey
         let hashValue = hashString.md5()
         
+        //Required parameters for Marvel API
         var param : [String : Any] = [
             "apikey": WebConstants.publicKey ,
             "ts": ts,

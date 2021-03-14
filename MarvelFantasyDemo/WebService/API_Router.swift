@@ -9,8 +9,8 @@ import Foundation
 
 struct API_Request{
     var url: String
-    //only url is taken for Marvel Api, since it has just .get method
-    //other authorization values can also be set
+    //only url is taken for Marvel Api, since it has just .get method, other HTTP methods can also be set here
+    //authorization parameters can also be set here
 }
 
 enum API_Router{

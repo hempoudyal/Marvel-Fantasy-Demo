@@ -26,9 +26,9 @@ class MarvelFantasyDemoUITests: XCTestCase {
         let searchButton = app.buttons["SearchButton"]
         searchButton.tap()
         
-        let verticalScrollBar2PagesCollectionView = app/*@START_MENU_TOKEN@*/.collectionViews.containing(.other, identifier:"Vertical scroll bar, 2 pages").element/*[[".collectionViews.containing(.other, identifier:\"Horizontal scroll bar, 1 page\").element",".collectionViews.containing(.other, identifier:\"Vertical scroll bar, 2 pages\").element"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         app.collectionViews.cells.otherElements.containing(.staticText, identifier:"Thor").element.tap()
         
+        //detects if there are changes in the API as well
         let tablesQuery = app.tables
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Thor & Loki: Double Trouble (2021) #1"]/*[[".cells.staticTexts[\"Thor & Loki: Double Trouble (2021) #1\"]",".staticTexts[\"Thor & Loki: Double Trouble (2021) #1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Thor (2020) #9"]/*[[".cells.staticTexts[\"Thor (2020) #9\"]",".staticTexts[\"Thor (2020) #9\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()

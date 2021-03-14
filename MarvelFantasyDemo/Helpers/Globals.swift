@@ -37,17 +37,6 @@ extension URLComponents{
     }
 }
 
-func convertToDictionary(text: String) -> [String: Any]? {
-    if let data = text.data(using: .utf8) {
-        do {
-            return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    return nil
-}
-
 func alertUser(viewController: UIViewController, title: String, message: String) {
     let dialogMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
     let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
