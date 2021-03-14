@@ -83,6 +83,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Find your superhero" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="991-Be-z01">
                                                         <rect key="frame" x="16" y="35" width="311" height="60"/>
                                                         <color key="backgroundColor" red="0.12549019607843137" green="0.10980392156862745" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="SearchTextField"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="kX0-kx-gaN"/>
                                                         </constraints>
@@ -92,6 +93,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO2-Xg-2Vz">
                                                         <rect key="frame" x="343" y="35" width="55" height="60"/>
                                                         <color key="backgroundColor" red="0.32941176470588235" green="0.43137254901960786" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="SearchButton"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="55" id="15T-Si-hJD"/>
                                                             <constraint firstAttribute="height" constant="60" id="miP-37-o1v"/>

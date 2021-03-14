@@ -10,25 +10,31 @@ import XCTest
 class MarvelFantasyDemoUITests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testBasicNavigationFlow() throws {
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        //Test with iPhone12 Pro Max
+        // In Simulator 'Hardware -> Keyboard -> Connect hardware keyboard' should be off for testing
+        let searchTextField = app.textFields["SearchTextField"]
+        searchTextField.tap()
+        searchTextField.typeText("Thor")
+        
+        let searchButton = app.buttons["SearchButton"]
+        searchButton.tap()
+        
+        let verticalScrollBar2PagesCollectionView = app/*@START_MENU_TOKEN@*/.collectionViews.containing(.other, identifier:"Vertical scroll bar, 2 pages").element/*[[".collectionViews.containing(.other, identifier:\"Horizontal scroll bar, 1 page\").element",".collectionViews.containing(.other, identifier:\"Vertical scroll bar, 2 pages\").element"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        app.collectionViews.cells.otherElements.containing(.staticText, identifier:"Thor").element.tap()
+        
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Thor & Loki: Double Trouble (2021) #1"]/*[[".cells.staticTexts[\"Thor & Loki: Double Trouble (2021) #1\"]",".staticTexts[\"Thor & Loki: Double Trouble (2021) #1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Thor (2020) #9"]/*[[".cells.staticTexts[\"Thor (2020) #9\"]",".staticTexts[\"Thor (2020) #9\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Valkyrie: Jane Foster (2019) #9"]/*[[".cells.staticTexts[\"Valkyrie: Jane Foster (2019) #9\"]",".staticTexts[\"Valkyrie: Jane Foster (2019) #9\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tabBars["Tab Bar"].buttons["home"].tap()
+        
     }
 
     func testLaunchPerformance() throws {
@@ -40,3 +46,5 @@ class MarvelFantasyDemoUITests: XCTestCase {
         }
     }
 }
+
+
