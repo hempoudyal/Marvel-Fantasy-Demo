@@ -12,7 +12,6 @@ class StoriesTableViewCell: UITableViewCell{
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var customBackgroundView: UIView!
     
-    
     func configureData(comic: Comic){
         let uiConfig = MFantasyUIConfiguration()
         
