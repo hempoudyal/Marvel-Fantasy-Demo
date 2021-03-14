@@ -25,6 +25,10 @@ class HomeViewController: UIViewController{
         setUpLayout()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationItem.title = ""
+    }
+    
     func setUpLayout(){
         let config = MFantasyUIConfiguration()
         
@@ -95,13 +99,7 @@ class HomeViewController: UIViewController{
                         self.searchTextField.text = ""
                         self.navigateToListView()
                     } else {
-                        let dialogMessage = UIAlertController(title: "Character not found", message: "Try with other chracters from Marvel Universe", preferredStyle: .alert)
-                        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
-                            print("Ok button tapped")
-                         })
-                        dialogMessage.addAction(ok)
-                        // Present alert to user
-                        self.present(dialogMessage, animated: true, completion: nil)
+                        alertUser(viewController: self, title: "Character not found", message: "Try with other chracters from Marvel Universe")
                     }
                 }
             } catch{

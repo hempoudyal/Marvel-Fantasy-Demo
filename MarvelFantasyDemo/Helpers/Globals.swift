@@ -5,7 +5,7 @@
 //  Created by Hem Poudyal on 3/12/21.
 //
 
-import Foundation
+import UIKit
 
 func getTimeStamp() -> String{
     let timestamp = String(NSDate().timeIntervalSince1970)
@@ -46,4 +46,14 @@ func convertToDictionary(text: String) -> [String: Any]? {
         }
     }
     return nil
+}
+
+func alertUser(viewController: UIViewController, title: String, message: String) {
+    let dialogMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+        print("Ok button tapped")
+     })
+    dialogMessage.addAction(ok)
+    // Present alert to user
+    viewController.present(dialogMessage, animated: true, completion: nil)
 }

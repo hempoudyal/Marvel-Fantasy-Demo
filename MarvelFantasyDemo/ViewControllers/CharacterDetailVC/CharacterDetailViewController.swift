@@ -31,7 +31,6 @@ class CharacterDetailViewController: UIViewController {
             characterImage.kf.setImage(with: URL(string: img))
         }
         
-        characterTextView.text = "No Description"
         if let desc = characterDetail!.description{
             characterTextView.text = desc
         }
@@ -46,7 +45,7 @@ class CharacterDetailViewController: UIViewController {
         
         //set tableview
         tableView.backgroundColor = UIColor(hexString: config.mainThemeBackgroundColor)
-        tableView.register(UINib(nibName: "StoriesTableViewCell", bundle: nil), forCellReuseIdentifier: "storiesCell")
+        tableView.register(UINib(nibName: CellNames.storiesTableViewCell, bundle: nil), forCellReuseIdentifier: ReuseIdentifiers.storiesTableReuseIdentifier)
     }
     
     func loadComicsData(){
@@ -59,13 +58,7 @@ class CharacterDetailViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.activityIndicator.stopAnimating()
                     if self.comics?.count == 0{
-                        let dialogMessage = UIAlertController(title: "", message: "No Comics available.", preferredStyle: .alert)
-                        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
-                            print("Ok button tapped")
-                         })
-                        dialogMessage.addAction(ok)
-                        // Present alert to user
-                        self.present(dialogMessage, animated: true, completion: nil)
+                        alertUser(viewController: self, title: "", message: "No Comics available.")
                     } else {
                         self.tableView.reloadData()
                     }

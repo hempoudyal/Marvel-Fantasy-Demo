@@ -18,9 +18,15 @@ class ListMarvelCharactersViewController: UIViewController {
         self.setupLayout()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationItem.title = ""
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.title = titleText
+    }
+    
     func setupLayout(){
-        self.title = titleText
-        
         //set activity indicator
         activityIndicator.center = CGPoint(x: view.bounds.width / 2, y: view.bounds.minY + 50)
         activityIndicator.color = UIColor.white
