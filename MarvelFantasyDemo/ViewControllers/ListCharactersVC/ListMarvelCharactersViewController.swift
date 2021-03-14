@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class ListMarvelCharactersViewController: UIViewController {
     var mCharacters: [MarvelCharacter]?
@@ -15,6 +16,7 @@ class ListMarvelCharactersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.hero.isEnabled = true
         self.setupLayout()
     }
     
@@ -53,6 +55,7 @@ class ListMarvelCharactersViewController: UIViewController {
         { (model, cell) in
             cell.configure(cornerRadius: 10)
             cell.mCharacterLabel.text = model.name
+            cell.hero.id = String(model.id)
             if let imgPath = model.thumbnail.path, let ext = model.thumbnail.extensionImg{
                 let img = imgPath + "." + ext
                 cell.mCharacterImageView.kf.setImage(with: URL(string:img))

@@ -7,11 +7,14 @@
 
 import UIKit
 import Kingfisher
+import Hero
 
 class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var characterTextView: UITextView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var comicInfoLabel: UILabel!
+    
     var characterDetail : MarvelCharacter?
     let config = MFantasyUIConfiguration()
     var activityIndicator = UIActivityIndicatorView(style: .medium)
@@ -19,13 +22,15 @@ class CharacterDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(hexString: config.mainThemeBackgroundColor)
-        setupUI()
+        setupLayout()
         loadComicsData()
         self.title = characterDetail?.name
     }
     
-    func setupUI(){
+    func setupLayout(){
+        comicInfoLabel.isHidden = true
         characterImage.configure(cornerRadius: 10.0)
+        characterImage.hero.id = String(characterDetail!.id)
         if let imgPath = characterDetail!.thumbnail.path, let ext = characterDetail!.thumbnail.extensionImg{
             let img = imgPath + "." + ext
             characterImage.kf.setImage(with: URL(string: img))
@@ -58,7 +63,7 @@ class CharacterDetailViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.activityIndicator.stopAnimating()
                     if self.comics?.count == 0{
-                        alertUser(viewController: self, title: "", message: "No Comics available.")
+                        self.comicInfoLabel.isHidden = false
                     } else {
                         self.tableView.reloadData()
                     }

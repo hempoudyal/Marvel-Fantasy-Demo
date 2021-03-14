@@ -7,9 +7,9 @@ target 'MarvelFantasyDemo' do
 
   # Pods for MarvelFantasyDemo
   pod 'IQKeyboardManagerSwift'
-  pod 'SVProgressHUD'
   pod 'CryptoSwift'
   pod 'Kingfisher'
+  pod 'Hero'
 
   target 'MarvelFantasyDemoTests' do
     inherit! :search_paths

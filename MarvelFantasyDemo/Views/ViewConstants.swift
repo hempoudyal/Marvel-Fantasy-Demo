@@ -8,9 +8,11 @@
 struct CellNames{
    static let homeCollectionViewCell = "MCharacterCollectionViewCell"
    static let storiesTableViewCell =  "StoriesTableViewCell"
+   static let projectFeatureTableViewCell = "ProjectFeatureTableViewCell"
 }
 
 struct ReuseIdentifiers{
     static let homeCollectionReuseIdentifier = "homeCell"
     static let storiesTableReuseIdentifier = "storiesCell"
+    static let projectFeatureReuseIdentifier = "featureCell"
 }
