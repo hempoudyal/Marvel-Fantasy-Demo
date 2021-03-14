@@ -41,6 +41,7 @@
 		99B00E1D25FC1F61000B6546 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00E1C25FC1F60000B6546 /* ViewConstants.swift */; };
 		99B00E2E25FC2235000B6546 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B00E2D25FC2235000B6546 /* Globals.swift */; };
 		99FA298C25FDE82600E413B1 /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA298B25FDE82600E413B1 /* Comics.swift */; };
+		99FA29A525FDFCBC00E413B1 /* ComicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA29A425FDFCBC00E413B1 /* ComicDetailViewController.swift */; };
 		EECA413DCD119EB552DEB653 /* Pods_MarvelFantasyDemo_MarvelFantasyDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B42ADE6759D3928A2480E54 /* Pods_MarvelFantasyDemo_MarvelFantasyDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		99B00E1C25FC1F60000B6546 /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		99B00E2D25FC2235000B6546 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		99FA298B25FDE82600E413B1 /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
+		99FA29A425FDFCBC00E413B1 /* ComicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailViewController.swift; sourceTree = "<group>"; };
 		B973CF44C94F6353FF173367 /* Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests/Pods-MarvelFantasyDemo-MarvelFantasyDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF5DD472B6FFF84B3B8D1BC8 /* Pods-MarvelFantasyDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemoTests/Pods-MarvelFantasyDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3920D447094E50A72997462 /* Pods-MarvelFantasyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelFantasyDemo.release.xcconfig"; path = "Target Support Files/Pods-MarvelFantasyDemo/Pods-MarvelFantasyDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				995C0C2025FD449200B30D07 /* ListCharactersVC */,
 				995C0C2125FD44A900B30D07 /* CharacterDetailVC */,
 				996738CC25FCE9FB00C56CD3 /* GenricCollectionViewController.swift */,
+				99FA29A425FDFCBC00E413B1 /* ComicDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				991A6C0125FA32AE00D31A26 /* HomeViewController.swift in Sources */,
 				995C0C1B25FD24A500B30D07 /* CharacterDetailViewController+TableViewController.swift in Sources */,
 				991A6C3725FA911900D31A26 /* UIConfiguration.swift in Sources */,
+				99FA29A525FDFCBC00E413B1 /* ComicDetailViewController.swift in Sources */,
 				996738E425FD18FF00C56CD3 /* CharacterDetailViewController.swift in Sources */,
 				99B00E2E25FC2235000B6546 /* Globals.swift in Sources */,
 				991A6B9D25F958E700D31A26 /* AppDelegate.swift in Sources */,

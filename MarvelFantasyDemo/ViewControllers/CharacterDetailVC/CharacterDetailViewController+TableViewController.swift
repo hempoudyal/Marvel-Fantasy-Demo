@@ -23,5 +23,15 @@ extension CharacterDetailViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return 120.0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let links = comics![indexPath.row].urls
+        if links.count != 0 {
+            let comicDetailVC = ComicDetailViewController()
+            comicDetailVC.linkUrl = links[0]
+            self.navigationController?.pushViewController(comicDetailVC, animated: true)
+        }
+        
+    }
 
 }

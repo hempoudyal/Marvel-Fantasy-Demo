@@ -27,5 +27,7 @@ class StoriesTableViewCell: UITableViewCell{
                 thumbnail.kf.setImage(with: URL(string:imageString))
             }
         }
+        
+        self.selectionStyle = .none
     }
 }

@@ -21,6 +21,7 @@ class CharacterDetailViewController: UIViewController {
         self.view.backgroundColor = UIColor(hexString: config.mainThemeBackgroundColor)
         setupUI()
         loadComicsData()
+        self.title = characterDetail?.name
     }
     
     func setupUI(){
