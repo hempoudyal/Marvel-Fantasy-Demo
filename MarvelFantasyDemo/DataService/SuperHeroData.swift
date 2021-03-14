@@ -11,7 +11,7 @@ struct SuperHeroData {
     
     static let heroCharacters = [ MarvelCharacter(id: 1, name: "Hulk", thumbnail:   thumbnails[0]),
                               MarvelCharacter(id: 2, name: "Thanos", thumbnail: thumbnails[1]),
-                              MarvelCharacter(id: 2, name: "Spider Man", thumbnail: thumbnails[2]),
+                              MarvelCharacter(id: 2, name: "Spider-Man", thumbnail: thumbnails[2]),
                               MarvelCharacter(id: 2, name: "Iron Man", thumbnail: thumbnails[3])
     ]
     

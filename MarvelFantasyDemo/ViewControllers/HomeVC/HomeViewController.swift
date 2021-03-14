@@ -52,8 +52,7 @@ class HomeViewController: UIViewController{
             } else {
                 let param : [String: Any] = ["nameStartsWith": searchTextField.text!]
                 self.selectedTitle = searchTextField.text!
-                activityIndicator.startAnimating()
-                parseResponse(param: param)
+                requestData(param: param)
                 searchButtonClicked = true
             }
         }
@@ -79,7 +78,8 @@ class HomeViewController: UIViewController{
         collectionView.dataSource = dataSource
     }
     
-    func parseResponse(param: [String: Any]){
+    func requestData(param: [String: Any]){
+        activityIndicator.startAnimating()
         WebService.webRequest(.getCharacters,
                               parameters: param)
         { (response) in
@@ -91,7 +91,18 @@ class HomeViewController: UIViewController{
                 
                 DispatchQueue.main.async {
                     self.activityIndicator.stopAnimating()
-                    self.navigateToListView()
+                    if self.mCharacters?.count != 0{
+                        self.searchTextField.text = ""
+                        self.navigateToListView()
+                    } else {
+                        let dialogMessage = UIAlertController(title: "Character not found", message: "Try with other chracters from Marvel Universe", preferredStyle: .alert)
+                        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                            print("Ok button tapped")
+                         })
+                        dialogMessage.addAction(ok)
+                        // Present alert to user
+                        self.present(dialogMessage, animated: true, completion: nil)
+                    }
                 }
             } catch{
                 //failed to parse

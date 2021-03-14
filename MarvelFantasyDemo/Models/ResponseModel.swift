@@ -18,4 +18,12 @@ struct ResponseData: Codable{
     let results: [MarvelCharacter]
 }
 
+struct ResponseComic: Codable{
+    let status: String
+    let data: ResponseComicData
+}
 
+struct ResponseComicData: Codable{
+    let count: Int
+    let results: [Comic]
+}

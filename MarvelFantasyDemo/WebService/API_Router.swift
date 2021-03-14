@@ -16,6 +16,7 @@ struct API_Request{
 enum API_Router{
     case getCharacters
     case events(id: String)
+    case comics(id: String)
 }
 
 extension API_Router{
@@ -25,6 +26,8 @@ extension API_Router{
             return API_Request(url: WebConstants.kBaseURL)
         case .events (let id):
             return API_Request(url: WebConstants.kBaseURL + "/" + id + "/events")
+        case .comics(let id):
+            return API_Request(url: WebConstants.kBaseURL + "/" + id + "/comics")
         }
     }
         

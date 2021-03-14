@@ -31,7 +31,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigateToListView()
+        let param : [String: Any] = ["nameStartsWith": SuperHeroData.heroCharacters[indexPath.row].name]
+        selectedTitle = SuperHeroData.heroCharacters[indexPath.row].name
+        requestData(param:param)
     }
 }
 

@@ -9,41 +9,50 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="storiesCell" rowHeight="90" id="p5t-IH-sZs" customClass="StoriesTableViewCell" customModule="MarvelFantasyDemo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="411" height="90"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="storiesCell" rowHeight="120" id="p5t-IH-sZs" customClass="StoriesTableViewCell" customModule="MarvelFantasyDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="120"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p5t-IH-sZs" id="Rwa-lW-lHb">
-                <rect key="frame" x="0.0" y="0.0" width="411" height="90"/>
+                <rect key="frame" x="0.0" y="0.0" width="411" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kwI-Xk-0kG">
-                        <rect key="frame" x="16" y="17.5" width="55" height="55"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLe-vK-1Y4">
+                        <rect key="frame" x="16" y="8" width="379" height="104"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.098039215686274508" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kwI-Xk-0kG">
+                        <rect key="frame" x="32" y="25" width="70" height="70"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="55" id="PI8-Zm-Pv2"/>
-                            <constraint firstAttribute="height" constant="55" id="v0Y-3I-xYV"/>
+                            <constraint firstAttribute="width" constant="70" id="PI8-Zm-Pv2"/>
+                            <constraint firstAttribute="height" constant="70" id="v0Y-3I-xYV"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEy-nN-S6p">
-                        <rect key="frame" x="87" y="16" width="308" height="58"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <rect key="frame" x="118" y="16" width="261" height="88"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="kwI-Xk-0kG" firstAttribute="leading" secondItem="Rwa-lW-lHb" secondAttribute="leading" constant="16" id="5sh-Ac-8VU"/>
+                    <constraint firstItem="kwI-Xk-0kG" firstAttribute="leading" secondItem="Rwa-lW-lHb" secondAttribute="leading" constant="32" id="5sh-Ac-8VU"/>
+                    <constraint firstAttribute="bottom" secondItem="DLe-vK-1Y4" secondAttribute="bottom" constant="8" id="944-uL-tlv"/>
+                    <constraint firstItem="DLe-vK-1Y4" firstAttribute="top" secondItem="Rwa-lW-lHb" secondAttribute="top" constant="8" id="BIe-qL-ITv"/>
+                    <constraint firstAttribute="trailing" secondItem="DLe-vK-1Y4" secondAttribute="trailing" constant="16" id="JYV-Yd-EMg"/>
                     <constraint firstItem="qEy-nN-S6p" firstAttribute="top" secondItem="Rwa-lW-lHb" secondAttribute="top" constant="16" id="LC8-L2-eUg"/>
                     <constraint firstItem="kwI-Xk-0kG" firstAttribute="centerY" secondItem="Rwa-lW-lHb" secondAttribute="centerY" id="WoJ-QU-T4Q"/>
-                    <constraint firstAttribute="trailing" secondItem="qEy-nN-S6p" secondAttribute="trailing" constant="16" id="chO-yV-z4W"/>
+                    <constraint firstAttribute="trailing" secondItem="qEy-nN-S6p" secondAttribute="trailing" constant="32" id="chO-yV-z4W"/>
                     <constraint firstAttribute="bottom" secondItem="qEy-nN-S6p" secondAttribute="bottom" constant="16" id="cq7-nI-osZ"/>
                     <constraint firstItem="qEy-nN-S6p" firstAttribute="leading" secondItem="kwI-Xk-0kG" secondAttribute="trailing" constant="16" id="d1f-I8-JQC"/>
+                    <constraint firstItem="DLe-vK-1Y4" firstAttribute="leading" secondItem="Rwa-lW-lHb" secondAttribute="leading" constant="16" id="orO-NY-WOU"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="customBackgroundView" destination="DLe-vK-1Y4" id="1n1-in-g6B"/>
                 <outlet property="thumbnail" destination="kwI-Xk-0kG" id="NH9-4l-IQs"/>
                 <outlet property="titleLabel" destination="qEy-nN-S6p" id="agU-Cn-Cxx"/>
             </connections>
-            <point key="canvasLocation" x="884.78260869565224" y="-670.98214285714278"/>
+            <point key="canvasLocation" x="884.78260869565224" y="-664.28571428571422"/>
         </tableViewCell>
     </objects>
 </document>

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class ListMarvelCharactersViewController: UIViewController {
     var mCharacters: [MarvelCharacter]?
@@ -50,7 +49,7 @@ class ListMarvelCharactersViewController: UIViewController {
             cell.mCharacterLabel.text = model.name
             if let imgPath = model.thumbnail.path, let ext = model.thumbnail.extensionImg{
                 let img = imgPath + "." + ext
-                cell.mCharacterImageView.kf.setImage(with: URL(string: img))
+                cell.mCharacterImageView.kf.setImage(with: URL(string:img))
             }
         }
         

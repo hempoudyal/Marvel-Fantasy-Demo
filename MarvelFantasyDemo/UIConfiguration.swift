@@ -18,8 +18,8 @@ class MFantasyUIConfiguration{
 
     func configureUI() {
         UITabBar.appearance().barTintColor = UIColor.init(hexString: self.mainThemeBackgroundColor)
-        UITabBar.appearance().tintColor =  UIColor.init(hexString: self.mainThemeForegroundColor)
-        UITabBar.appearance().unselectedItemTintColor =  UIColor.init(hexString: self.mainTextColor)
+        UITabBar.appearance().tintColor =  UIColor.white
+        UITabBar.appearance().unselectedItemTintColor =  UIColor.white
 
         UITabBar.appearance().backgroundImage = UIImage.colorForNavBar( UIColor.init(hexString: self.mainThemeBackgroundColor))
 
